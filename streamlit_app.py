@@ -146,7 +146,7 @@ if start_execution:
 
             st.header("GTrends data for keyword {}: {}".format(i+1, str(linesList[i])))
 
-            c29, c30, c31 = st.beta_columns([6, 2, 6])
+            c29, c30, c31 = st.beta_columns([6, 2, 12])
 
             with c29:
 
