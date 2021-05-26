@@ -61,8 +61,9 @@ st.markdown('**Your UK 5 Top & Rising Google Trends Dashboard⚡**')
 
 linesDeduped2 = []
 MAX_LINES = 5
-text2 = st.markdown("UK, Last 3 months trends data at your fingertips, no coding needed😎. To get started:")
-text = st.text_area("Paste 1 keyword per line, and hit Get Trends to get your trends data⬇️", height=150, key=1)
+text2 = st.markdown("Get your Top & Rising trends for 5 keywords, directly from Google Trends, no coding needed :sunglasses:.")
+text3 = st.markdown("To get started: Paste 1 keyword per line, pick your country (geo) & timeframe from the drop downs & hit 'Get Trends🤘' ")
+text = st.text_area("by Orit Mutznik (@oritsimu)", height=150, key=1)
 #text2 = st.markdown('***Please make sure there are no extra spaces in the beginning or end of each keyword, also no apostrophes or dashes🙏**')
 lines = text.split("\n")  # A list of lines
 linesList = []
