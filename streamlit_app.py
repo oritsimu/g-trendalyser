@@ -52,7 +52,8 @@ def removeRestrictedCharactersAndWhiteSpaces(keywords):
     
     return preprocessed_list
     
-    
+
+st.set_page_config(layout="wide")
 
 st.title("The G-Trendalizer:snake::fire:")
 st.markdown('**Your UK 5 Top & Rising Google Trends Dashboard⚡**') 
@@ -146,7 +147,7 @@ if start_execution:
 
             st.header("GTrends data for keyword {}: {}".format(i+1, str(linesList[i])))
 
-            c29, c30, c31 = st.beta_columns([8, 2, 12])
+            c29, c30, c31 = st.beta_columns([6, 2, 6])
 
             with c29:
 
