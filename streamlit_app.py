@@ -65,7 +65,7 @@ MAX_LINES = 5
 text2 = st.markdown("Get your Top & Rising trends for 5 keywords, directly from Google Trends, no coding needed :sunglasses:.")
 text3 = st.markdown("To get started: Paste 1 keyword per line, pick your country (geo) & timeframe from the drop downs & hit 'Get Trends🤘' ")
 text = st.text_area("by Orit Mutznik (@oritsimu)", height=150, key=1)
-#text2 = st.markdown('***Value column does not represent search volume, it's more of a value assigned by Google to signal how trending a kw is**')
+text2 = st.markdown('***Value column does not represent search volume, it is more of a value assigned by Google to signal how trending a kw is**')
 lines = text.split("\n")  # A list of lines
 linesList = []
 for x in lines:
