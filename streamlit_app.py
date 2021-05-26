@@ -84,16 +84,8 @@ st.write(f"You selected " + country)
 idx = country_names.index(country)
 country_code = country_codes[idx],
 
-#st.write(f"Choose Period")
-
-#col1, col2, col3, col4 = st.beta_columns(4)
-
 selected_timeframe = ""
 
-#year = col1.selectbox("Years from now", ["0", "5"])
-#month = col2.selectbox("Months from now", ["0", "1", "3"])
-#day = col3.selectbox("Days from now", ["0", "1", "7"])
-#hour = col4.selectbox("Hours from now", ["0", "1", "4"])
 
 period_list = ["Past 12 months", "Past hour", "Past 4 hours", "Past day", "Past 7 days", "Past 30 days", "Past 90 days", "Past 5 years", "2004 - present", "Custom time range"]
 tf = ["today 12-m", "now 1-H", "now 4-H", "now 1-d", "now 7-d", "today 1-m", "today 3-m", "today 5-y", "all", "custom"]
@@ -117,32 +109,19 @@ if selected_timeframe == "custom":
     st.write(f"From")
 
     col11, col12, col13 = st.beta_columns(3)
-    year_from = col11.selectbox("year", years)
-    month_from = col12.selectbox("month", months)
-    day_from = col13.selectbox("day", days)
+    year_from = col11.selectbox("year", years, key="0")
+    month_from = col12.selectbox("month", months, key="1")
+    day_from = col13.selectbox("day", days, key="2")
     
     st.write(f"To")
 
     col21, col22, col23 = st.beta_columns(3)
-    year_to = col21.selectbox("year", years)
-    month_to = col22.selectbox("month", months)
-    day_to = col23.selectbox("day", days)
+    year_to = col21.selectbox("year", years, key="3")
+    month_to = col22.selectbox("month", months, key="4")
+    day_to = col23.selectbox("day", days, key="5")
     
     selected_timeframe = str(year_from) + "-" + str(month_from) + "-" + str(day_from) + " " + str(year_to) + "-" + str(month_to) + "-" + str(day_to)
         
-    print(selected_timeframe)
-
-#if year != "0":
-#    selected_timeframe = "today " + year + "-y"
-#elif month != "0":
-#    selected_timeframe = "today " + month + "-m"
-#elif day != "0":
-#    selected_timeframe = "now " + day + "-d"
-#else:
-#    selected_timeframe = "now " + hour + "-H"
-
-#st.write(f"You selected " + year + " year(s), " + month + " month(s), " + day + " day(s), " + hour + " hour(s) from now")
-
 
 start_execution = st.button("Get Trends! 🤘")
 
