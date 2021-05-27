@@ -55,7 +55,7 @@ def removeRestrictedCharactersAndWhiteSpaces(keywords):
 
 st.set_page_config(layout="wide")
 
-st.title("The G-Trendalizer:snake::fire:")
+st.title("The G-Trendalyzer:snake::fire:")
 st.markdown('**Your 5 Top & Rising Google Trends Dashboard⚡**') 
 
 # st.markdown("## ** Paste keywords **")
