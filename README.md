@@ -9,5 +9,5 @@ The G-Trendalyzer is a Streamlit App that connects to the <a href="https://pypi.
 </a>
   , which is still very useful if you want always run the same kws every time.</li>
 <li>Contact me on <a href="https://www.linkedin.com/in/oritsimu/"/>LinkedIn</a> or <a href="https://twitter.com/OritSiMu"/>Twitter</a> for any questions or feedback.</li></ul>
-More details <a href="https://www.oritseo.me"/>here</a>.
+More details <a href="https://www.oritmutznik.com/python-seo/introducing-the-g-trendalyser"/>here</a>.
 
