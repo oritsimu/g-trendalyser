@@ -1,7 +1,5 @@
 import streamlit as st
 from pytrends.request import TrendReq
-
-pytrends = TrendReq()
 import pandas as pd
 import time
 import datetime
@@ -13,6 +11,7 @@ from parseCountries import parse
 import base64
 from datetime import date
 
+pytrend = TrendReq()
 
 def removeRestrictedCharactersAndWhiteSpaces(keywords):
 
@@ -139,13 +138,13 @@ if start_execution:
     else:
     
         linesList = removeRestrictedCharactersAndWhiteSpaces(linesList)
-        
-        pytrends.build_payload(linesList, timeframe=selected_timeframe, geo=country_code[0])
-        related_queries = pytrends.related_queries()
+
+        pytrend.build_payload(linesList, timeframe=selected_timeframe, geo=country_code[0])
+        related_queries = pytrend.related_queries()
         
         for i in range(len(linesList)):
 
-            st.header("GTrends data for keyword {}: {}".format(i+1, str(linesList[i])))
+            st.header("GTrends data for keyword {}: {}".format(i + 1, str(linesList[i - 1])))
 
             c29, c30, c31 = st.beta_columns([6, 2, 6])
 
